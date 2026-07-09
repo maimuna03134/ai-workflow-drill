@@ -44,6 +44,19 @@ AI was used to assist with:
 
 ---
 
+## 📏 Project Rules Learned
+
+1. Always verify the test framework before using AI-generated code  
+   (Jest vs Vitest mismatch caused test failures)
+
+2. Always include a testing step in prompts  
+   (e.g., "write code → then write tests → then verify")
+
+3. Prefer structured prompts with clear constraints and examples  
+   (produces more accurate and predictable results)
+
+4. Never blindly trust AI output — always review and test manually
+
 ## 🚀 Benefits of Using AI
 
 - Faster debugging ⚡
@@ -53,6 +66,10 @@ AI was used to assist with:
 
 ---
 
+## ⚠️ AI Mistake Observed
+
+AI initially generated code using `jest.spyOn`, which was incompatible with the project's use of Vitest.  
+This caused test failures and required manual correction using `vi.spyOn`.
 ## ⚠️ Notes
 
 - All AI suggestions were reviewed before implementation
